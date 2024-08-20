@@ -1,0 +1,68 @@
+{
+  "sneakers": [
+    {
+      "id": 1,
+      "brand": "Nike",
+      "model": "Air Max 270",
+      "size": 42,
+      "color": "Black",
+      "price": 150.00,
+      "stock": 30
+    },
+    {
+      "id": 2,
+      "brand": "Adidas",
+      "model": "UltraBoost 21",
+      "size": 44,
+      "color": "White",
+      "price": 180.00,
+      "stock": 25
+    },
+    {
+      "id": 3,
+      "brand": "Puma",
+      "model": "RS-X3",
+      "size": 43,
+      "color": "Blue",
+      "price": 120.00,
+      "stock": 15
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "securepassword123",
+      "email": "john@example.com",
+      "role": "customer"
+    },
+    {
+      "id": 2,
+      "username": "admin_user",
+      "password": "adminpassword",
+      "email": "admin@example.com",
+      "role": "admin"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": 1,
+      "user_id": 1,
+      "sneakers": [
+        { "sneaker_id": 1, "quantity": 1 },
+        { "sneaker_id": 3, "quantity": 2 }
+      ],
+      "total_price": 390.00,
+      "status": "pending"
+    },
+    {
+      "order_id": 2,
+      "user_id": 2,
+      "sneakers": [
+        { "sneaker_id": 2, "quantity": 1 }
+      ],
+      "total_price": 180.00,
+      "status": "shipped"
+    }
+  ]
+}
